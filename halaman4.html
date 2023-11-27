@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="halaman.css">
+    <link rel="icon" type="image/png" href="ikon.jpg">
+    <style>
+        
+        #contact {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .contact-info,
+        .contact-form {
+            width: 45%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .contact-form form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .contact-form button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .whatsapp-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .whatsapp-button {
+            background-color: #25d366;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <nav class="wrapper">
+            <ul class="navigation">
+                <li><a href="UAS.html">HOME</a></li>
+                <li><a href="halaman2.html">PRODUCT</a></li>
+                <li><a href="halaman3.html">DETAIL</a></li>
+                <li><a href="halaman4.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="body">
+        <div class="productlist">
+            <h2>HUBUNGI KAMI</h2>
+        </div>
+        <div class="garis">
+            <hr>
+        </div>
+    </div>
+
+    <section id="contact">
+        <div class="contact-info">
+            <h3>Info Kontak</h3>
+            <table>
+                <tr>
+                    <td>Email:</td>
+                    <td>nurfadilla@gmai.com</td>
+                </tr>
+                <tr>
+                    <td>Telepon:</td>
+                    <td>+62 8966 1681 634</td>
+                </tr>
+                <tr>
+                    <td>Alamat:</td>
+                    <td>Jl. R.A. KAERINI, Kota Polewali</td>
+                </tr>
+            </table>
+        </div>
+        <div class="contact-form">
+            <h3>Formulir Kontak</h3>
+            <form action="proses_formulir.php" method="post">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="whatsapp-container">
+        <h3>Hubungi Kami</h3>
+        <p>Jika Anda memiliki pertanyaan atau ingin berbicara langsung, hubungi kami melalui WhatsApp:</p>
+        <a href="https://wa.me/qr/OVMXRQQIGJHXF1" target="_blank" class="whatsapp-button">Hubungi melalui WhatsApp</a>
+    </div>
+</body>
+
+</html>
